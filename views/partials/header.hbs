@@ -1,0 +1,15 @@
+<nav>
+    <a>Theater</a>
+    <ul>
+        <li><a href="/">Home </a></li>
+        {{#if user}}
+
+        <li><a href="/play/my-plays">My Plays</a></li>
+        <li><a href="/user/logout">Logout</a></li>
+        <li><a >Welcome, {{user.username}}</a></li>
+        {{else}}
+        <li><a href="/user/login">Login</a></li>
+        <li><a href="/user/register">Register</a></li>
+        {{/if}}
+    </ul>
+</nav>
